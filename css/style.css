@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#indexGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px 6fr 2.75fr 1.25fr 35px;
+    grid-template-areas:
+    "navigationBar"
+    "pageTitle"
+    "pageInformation"
+    "otherLinks"
+    "footerBar";
+}
+#adoptionsGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px 1.75fr 2.75fr 1.75fr 35px;
+    grid-template-areas: 
+    "navigationBar"
+    "pageTitle"
+    "pagePreinformation"
+    "pageInformation"
+    "footerBar";
+}
+#careGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px 3fr 1.6fr 4.8fr 0.6fr 35px;
+    grid-template-areas: 
+    "navigationBar"
+    "pageTitle"
+    "pagePreinformation"
+    "pageInformation"
+    "otherLinks"
+    "footerBar";
+}
+#donationsGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px 4.7fr 5fr 0.3fr;
+    grid-template-areas: 
+    "navigationBar"
+    "pageTitle"
+    "pageInformation"
+    "footerBar";
+}
+#contactGrid{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px 0.9fr auto 0.1fr;
+    grid-template-areas: 
+    "navigationBar"
+    "pageTitle"
+    "pageInformation"
+    "footerBar";
+}
+.navigationBar{
+    grid-area: navigationBar; 
+    background-color: #EDC79B;
+    padding-top: 8px;  
+}
+.pageTitle{
+    grid-area: pageTitle;
+}
+.pagePreinformation{
+    grid-area: pagePreinformation;
+    background-color: #CA6680;
+} 
+.pageInformation{
+    grid-area: pageInformation;
+    background-color: #63A375;
+}
+.otherLinks{
+    grid-area: otherLinks;
+    background-color: rgb(206, 110, 99);
+}
+.footerBar{
+    grid-area: footerBar;
+    background-color: #713E5A;
+    padding-top: 10px;
+}
+body nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    color: rgb(124, 24, 124);
+}
+body footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.indexHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 200px;
+    padding-top: 200px;
+}
+.indexHeader h1{
+    font-size: 50px;
+}
+.indexHeader h2{
+    font-size: xx-large;
+}
+.indexSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.indexAside{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.indexAside ul li{
+    list-style: none;
+}
+.indexAside ul li a{
+    text-decoration: none;
+    color: black;
+}
+.adoptionsHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 50px;
+}
+.adoptionsPresection{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
+.adoptionsPresection article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.adoptionsPresection article div h3{
+    color: rgb(54, 11, 88);
+}
+.adoptionsPresection article div p a{
+    color: black;
+}
+.adoptionsSection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.adoptionsSection article header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.adoptionsSection article header h2{
+    color: #491130;
+    text-decoration: underline;
+}
+.adoptionsSection article div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.adoptionsSection article div ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.careHeader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    padding-right: 150px;
+}
+.carePresection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.carePresection article header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carePresection article header h2{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.careSection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;  
+    padding-left: 100px; 
+    padding-right: 100px;
+}
+.careSection article header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.careSection article ul li{
+   list-style: none; 
+   text-decoration: underline;
+   color: rgb(70, 7, 70);
+   font-weight: bold;
+}
+.careAside{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.careAside ul{
+    list-style: none;
+}
+.careAside ul h4{
+    text-decoration: underline;
+    color: #491130;
+    font-weight: bold;
+}
+.careAside ul li a{
+    text-decoration: none;
+    color: black;
+}
+.donationsHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 80px;
+}
+.donationsSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.donationsSection article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.donationsSection article header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.donationsSection article div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.donationsSection article div a{
+    text-decoration: none;
+}
+.donationsSection article div a p{
+    color: #491130;
+    font-weight: bold;
+}
+.contactHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.contactSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactSection form ul{
+    list-style: none;
+}
+.indexBackgroundimage{
+    background-image: url("https://getwallpapers.com/wallpaper/full/6/8/2/1179664-cat-hd-wallpapers-1080p-1920x1080-smartphone.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.contactBackgroundimage{
+ background-image: url("https://getwallpapers.com/wallpaper/full/e/f/2/1179657-top-cat-hd-wallpapers-1080p-1920x1080-for-ios.jpg");
+ background-position: center;
+ background-size: cover;
+}
+.adoptionsBackgroundimage{
+    background-image: url("https://getwallpapers.com/wallpaper/full/d/f/e/1179575-cat-hd-wallpapers-1080p-1920x1080-hd.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.donationsBackgroundimage{
+    background-image: url("https://getwallpapers.com/wallpaper/full/8/6/5/1180065-cool-cat-hd-wallpapers-1080p-1920x1080-windows.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.careBackgroundimage{
+    background-image: url("https://getwallpapers.com/wallpaper/full/2/0/e/1179861-download-cat-hd-wallpapers-1080p-1920x1080.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.navigationBar ul li a{
+    text-decoration: none;
+}
+.pageFonts{
+    font-family: 'Marcellus', serif;
+}
+footer div p a{
+    text-decoration: none;
+    color: black;
+}
+h2{
+    padding-top: 25px;
+    padding-bottom: 8px;
+}
+.textPadding{
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+.careShortpadding{
+    padding-top: 30px;
+    padding-bottom: 8px;
+}
+.careLongpadding{
+    padding-top: 50px;
+}
+.carePadding{
+    padding-bottom: 5px;
+}
+.careToppadding{
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 480px){
+    #adoptionsGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 35px 0.75fr 2fr 1fr 0.05fr;
+        grid-template-areas: 
+        "navigationBar"
+        "pageTitle"
+        "pagePreinformation"
+        "pageInformation"
+        "footerBar";
+    }
+    #careGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 35px 1.5fr 1.5fr 4fr 0.54fr 0.23fr;
+        grid-template-areas: 
+        "navigationBar"
+        "pageTitle"
+        "pagePreinformation"
+        "pageInformation"
+        "otherLinks"
+        "footerBar";
+    }
+    .indexHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 10px;
+        padding-top: 90px;
+    }
+    .indexHeader h1{
+        color: #a81da8;
+    }
+    .indexSection{
+        padding-bottom: 10px;
+    }
+    .indexAside{
+        padding-left: 10px;
+    }
+    
+    .adoptionsHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-right: 50px;
+        padding-top: 110px;
+    }
+    .adoptionsSection{
+        padding-bottom: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .careHeader{
+        padding-right: 10px;
+        padding-left: 220px;
+    }
+    .carePresection{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .careSection{ 
+        padding-left: 10px; 
+        padding-right: 10px;
+    }
+    .donationsSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 8px;
+    }
+    .contactHeader{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 60px;
+        padding-left: 210px;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+    #indexGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 35px 4.7fr 3.4fr 1.4fr 0.4fr;
+        grid-template-areas:
+        "navigationBar"
+        "pageTitle"
+        "pageInformation"
+        "otherLinks"
+        "footerBar";
+    }
+    #adoptionsGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 35px 2.3fr 4.8fr 2.5fr 0.2fr;
+        grid-template-areas: 
+        "navigationBar"
+        "pageTitle"
+        "pagePreinformation"
+        "pageInformation"
+        "footerBar";
+    }  
+    #careGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 35px 2.54fr 1.5fr 5fr 0.61fr 0.175fr;
+        grid-template-areas: 
+        "navigationBar"
+        "pageTitle"
+        "pagePreinformation"
+        "pageInformation"
+        "otherLinks"
+        "footerBar";
+    }
+    body nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        font-size: smaller;
+        color: rgb(124, 24, 124);
+    }
+    body footer div{
+        font-size: x-small;
+    }
+    .indexHeader{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 10px;
+        padding-top: 52px;
+    }
+    .indexSection article{
+        font-size: xx-small;
+    }
+    .indexAside{
+        justify-content: flex-start;
+        align-items: center;
+        padding-bottom: 10px;
+        font-size: xx-small;
+    }
+    .indexBackgroundimage{
+        background-position: 70%;
+    }
+    .adoptionsHeader{
+        padding-right: 100px;
+        padding-left: 2px;
+        padding-bottom: 30px;
+    }
+    .adoptionsHeader h1{
+        color: #a81da8;
+    }
+    .adoptionsPresection{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .adoptionsSection{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .adoptionsSection article{
+        font-size: xx-small;
+    }
+    .adoptionsPresection article{
+        font-size: xx-small;
+    }
+    .adoptionsPresection article ol li h3{
+        padding-top: 10px;
+        padding-bottom: 4px;
+    }
+    .careHeader{
+        font-size: small;
+    }
+    .carePresection article{
+        font-size: xx-small;
+    }
+    .careSection article{
+        font-size: xx-small;
+    }
+    .careAside{
+        font-size: xx-small;
+    }
+    .careBackgroundimage{
+        background-position: 35%;
+    }
+    .donationsSection{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .donationsSection article{
+        font-size: xx-small;
+    }
+    .contactBackgroundimage{
+        background-position: 30%;
+       }
+    .contactSection{
+        font-size: xx-small;
+    }
+    .contactHeader{
+        font-size: xx-small;
+    }
+    
+}
+
+
+
