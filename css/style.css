@@ -75,7 +75,7 @@
 }
 .otherLinks{
     grid-area: otherLinks;
-    background-color: rgb(206, 110, 99);
+    background-image: linear-gradient(to bottom right,#df8a76,#e2421e);
 }
 .footerBar{
     grid-area: footerBar;
@@ -142,6 +142,9 @@ body footer div{
     padding-bottom: 20px;
     padding-left: 5px;
 }
+.adoptionsPresection article div:hover{
+    transform: scale(1.2,1.2);
+    }
 .adoptionsPresection article{
     display: flex;
     flex-direction: row;
@@ -359,6 +362,36 @@ h2{
 .careToppadding{
     padding-bottom: 10px;
 }
+.animate__animated.animate__backOutDown{
+    animation-delay: 1.5s;
+    animation-duration: 3s;
+}
+.animate__animated.animate__bounceInLeft{
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+}
+.animate__animated.animate__rotateInDownRight{
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+.animate__animated.animate__shakeX{
+    animation-duration: 2s;
+}
+.animate__animated.animate__bounceInRight{
+    animation-delay: 1s;
+    animation-duration: 2s;
+
+}
+.animate__animated.animate__fadeInUp{
+    animation-delay: 1s;
+    animation-duration: 2s;
+    color: #ff06ff;
+}
+.animate__animated.animate__headShake{
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+}
+
 
 @media screen and (max-width: 480px){
     #adoptionsGrid{
