@@ -5,7 +5,7 @@
 #indexGrid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 35px 6fr 2.75fr 1.25fr 35px;
+    grid-template-rows: 35px 3.3fr 2.75fr 1.25fr 40px;
     grid-template-areas:
     "navigationBar"
     "pageTitle"
@@ -50,7 +50,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 35px 0.9fr auto 0.1fr;
+    grid-template-rows: 35px 0.9fr 0.5fr 0.175fr;
     grid-template-areas: 
     "navigationBar"
     "pageTitle"
@@ -95,7 +95,7 @@ body footer div{
     flex-direction: row;
     justify-content: space-around;
 }
-.indexHeader{
+/*.indexHeader{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -116,6 +116,7 @@ body footer div{
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .indexAside{
     display: flex;
     flex-direction: column;
@@ -129,7 +130,7 @@ body footer div{
 .indexAside ul li a{
     text-decoration: none;
     color: black;
-}
+}*/
 .adoptionsHeader{
     display: flex;
     flex-direction: column;
@@ -391,13 +392,30 @@ h2{
     animation-duration: 2s;
     animation-delay: 2.5s;
 }
-
-
+.navColorcorrection{
+    background-color: #EDC79B;
+}
+.fontColornav{
+    color: black;
+}
+.iAside ul li{
+    list-style: none;
+}
+.iAside ul li a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    margin-bottom: 0;
+}
+.fontColortitles{
+    color: #a81da8;
+}
 @media screen and (max-width: 480px){
     #adoptionsGrid{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 35px 0.75fr 2fr 1fr 0.05fr;
+        grid-template-rows: 35px 0.75fr 2fr 1fr 100px;
         grid-template-areas: 
         "navigationBar"
         "pageTitle"
@@ -478,7 +496,9 @@ h2{
         padding-left: 210px;
     }
 }
-
+body footer div{
+    background-color: #713E5A;
+}
 
 @media screen and (max-width: 320px){
     #indexGrid{

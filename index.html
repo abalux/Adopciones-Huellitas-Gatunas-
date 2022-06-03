@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Marcellus&family=Stoke:wght@300&display=swap" rel="stylesheet">
@@ -11,38 +12,52 @@
     <link rel="stylesheet" href="./css/style.css"/>
     <title>Adopciones Huellitas Gatunas</title>
 </head>
-<body id="indexGrid" class="pageFonts">
-    <nav class="navigationBar">
-        <ul> 
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="./pages/adopciones.html">Adopciones</a></li>
-            <li><a href="./pages/cuidados.html">Cuidados</a></li>
-            <li><a href="./pages/donaciones.html">Donaciones</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <header class="pageTitle indexHeader indexBackgroundimage">
-            <h1 class="animate__animated animate__rubberBand">HUELLITAS GATUNAS</h1>
-            <h2 class="animate__animated animate__bounceInLeft">Tu gato te espera</h2>    
+<body id="indexGrid" class="pageFonts fontColornav">
+    <nav class="navbar-expand-lg d-flex flex-row justify-content-around navColorcorrection">
+        <div class="container-fluid">
+          <div id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link fontColornav" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fontColornav" href="./pages/adopciones.html">Adopciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fontColornav" href="./pages/cuidados.html">Cuidados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fontColornav" href="./pages/donaciones.html">Donaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fontColornav" href="./pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <header class="pageTitle d-flex flex-column justify-content-center align-items-center pe-5 indexBackgroundimage">
+            <h1 class="animate__animated animate__rubberBand w-75 fontColortitles">HUELLITAS GATUNAS</h1>
+            <h2 class="animate__animated animate__bounceInLeft w-75">Tu gato te espera</h2>    
     </header>
-    <section class="pageInformation indexSection">
-        <article>
-            <header>
+    <section class="pageInformation d-flex flex-column justify-content-center align-items-center">
+        <article class="col-lg-6">
+            <header >
             <h2>Por qué elegir un gato como mascota?</h2>
             <h4>Aunque se lo conoce como un ser independiente, el gato es el companero perfecto para vos, a continuación te daremos varias razones</h4>
             </header>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nulla beatae nam incidunt natus sunt reprehenderit soluta. Velit ad, ut minima in laudantium, rerum sapiente tenetur cumque consequuntur voluptas modi.</p>
         </article>
-        <article>
+        <article class="col-lg-6">
             <header>
                 <h2>Sobre nosotros</h2>
             </header>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam quaerat adipisci possimus. Beatae ducimus, excepturi facere placeat reiciendis eveniet impedit nam vel ipsa. Et libero corrupti mollitia dolorum corporis debitis?</p>
         </article>
     </section>
-    <aside class="otherLinks indexAside">
-        <h2>Algunos links de interés</h2>
-        <ul>
+    <aside class="otherLinks d-flex flex-column justify-content-center align-items-center iAside">
+        <h2 class="col-lg-3">Algunos links de interés</h2>
+        <ul class="col-lg-3">
             <li><a href="https://www.expertoanimal.com/10-razones-para-adoptar-un-gato-21773.html">10 razones para adoptar un gato</a></li>
             <li><a href="https://mevepa.cl/ventajas-y-desventajas-de-elegir-un-gato-como-mascota/">Ventajas y desventajas de elegir un gato como mascota</a></li>
             <li><a href="https://elrincondelgato.net/por-que-tener-un-gato/">Por qué tener un gato</a></li>
@@ -63,5 +78,6 @@
             </p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
