@@ -1,0 +1,15 @@
+.careBackgroundimage{
+    background-image: url("https://getwallpapers.com/wallpaper/full/2/0/e/1179861-download-cat-hd-wallpapers-1080p-1920x1080.jpg");
+    @extend %backgImage;
+}
+.animate__animated.animate__rotateInDownRight{
+        animation-delay: 1s;
+        animation-duration: 2s;
+    }
+.colorText{
+        @include textColor();
+        text-decoration: none;
+    }
+.catchEyecolor{
+        color: map-get($fontColors, color1);
+    }

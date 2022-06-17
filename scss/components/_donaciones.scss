@@ -1,0 +1,18 @@
+.donationsBackgroundimage{
+        background-image: url("https://getwallpapers.com/wallpaper/full/8/6/5/1180065-cool-cat-hd-wallpapers-1080p-1920x1080-windows.jpg");
+        @extend %backgImage;
+    }
+.animate__animated.animate__fadeInUp{
+            animation-delay: 1s;
+            animation-duration: 2s;
+            color: #97003a;
+        }
+.animate__animated.animate__headShake{
+    animation-duration: 2s;
+                animation-delay: 5.5s;
+            }
+            
+.colorText{
+            @include textColor();
+            text-decoration: none;
+            }
