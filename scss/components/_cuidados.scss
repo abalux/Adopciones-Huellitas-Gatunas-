@@ -6,10 +6,13 @@
         animation-delay: 1s;
         animation-duration: 2s;
     }
-.colorText{
-        @include textColor();
+.otherColortext{
+        color: nth($font-colors, 2);
         text-decoration: none;
-    }
+        }
 .catchEyecolor{
         color: map-get($fontColors, color1);
     }
+.cardColor{
+        background-color: nth($bg-colors, 6);
+}

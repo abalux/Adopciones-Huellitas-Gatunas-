@@ -63,6 +63,26 @@ body footer {
   animation-delay: 1.5s;
   animation-duration: 2s;
 } /*no los se anidar*/
+.headerHeight {
+  height: 100vh;
+}
+
+.pagePreinfo {
+  background-color: rgba(224, 69, 121, 0.933);
+}
+
+.pageInfo {
+  background-color: #7ac48f;
+}
+
+.adoptionsTitlepadding {
+  padding-top: 200px;
+}
+
+.adoptionsTransformation article div:hover {
+  transform: scale(1.2, 1.2);
+}
+
 .adoptionsBackgroundimage {
   background-image: url("https://getwallpapers.com/wallpaper/full/d/f/e/1179575-cat-hd-wallpapers-1080p-1920x1080-hd.jpg");
 }
@@ -81,6 +101,11 @@ body footer {
   color: #a51499;
 }
 
+.otherColortext {
+  color: rgb(105, 15, 189);
+  text-decoration: none;
+}
+
 .careBackgroundimage {
   background-image: url("https://getwallpapers.com/wallpaper/full/2/0/e/1179861-download-cat-hd-wallpapers-1080p-1920x1080.jpg");
 }
@@ -90,13 +115,17 @@ body footer {
   animation-duration: 2s;
 }
 
-.colorText {
-  color: black;
+.otherColortext {
+  color: rgb(105, 15, 189);
   text-decoration: none;
 }
 
 .catchEyecolor {
   color: #a51499;
+}
+
+.cardColor {
+  background-color: rgba(224, 69, 121, 0.933);
 }
 
 .donationsBackgroundimage {
