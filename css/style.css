@@ -4,12 +4,12 @@
 }
 
 body {
-  background-color: #7ac48f;
+  background-color: #713E5A;
   color: black;
   font-family: "Marcellus", serif;
 }
 body nav {
-  background-color: #EDC79B;
+  background-color: #d4834d;
 }
 body header h1 {
   color: #a51499;
@@ -25,16 +25,9 @@ body section {
 body aside {
   background-image: linear-gradient(to bottom right, #df8a76, #e2421e);
 }
-body aside ul li {
-  list-style: none;
-}
-body aside ul li a {
-  color: rgb(105, 15, 189);
-  text-decoration: none;
-}
 body footer {
   padding-top: 10px;
-  background-color: #713E5A;
+  /*background-color: nth($bg-colors , 5);*/
 }
 
 .indexBackgroundimage {
@@ -63,12 +56,50 @@ body footer {
   animation-delay: 1.5s;
   animation-duration: 2s;
 } /*no los se anidar*/
+.carouselSize {
+  height: 200px;
+  width: 400px;
+}
+
+.indexPhrasebg {
+  background-image: url(https://t3.ftcdn.net/jpg/02/98/20/18/240_F_298201821_e90YxH0f6FBwOvcKhynlwF8sNYxlCMsg.jpg);
+}
+
+.indexPhrase2bg {
+  background-image: url(https://t4.ftcdn.net/jpg/02/71/80/07/240_F_271800729_IQMQ6TYmvy1eK1v7ZwzmYriOoYYsbTkj.jpg);
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+.cardColor {
+  background-color: #d4834d;
+}
+
+.quoteColor {
+  background-image: url(https://t4.ftcdn.net/jpg/02/51/94/23/240_F_251942332_zFyC631w7mosf846QXtWjcmNqU11SErH.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutUsbg {
+  background-color: black;
+}
+
+.border-radius {
+  border-radius: 50%;
+}
+
+.imgQuote {
+  max-width: 35vw;
+  height: auto;
+}
+
 .headerHeight {
   height: 100vh;
 }
 
 .pagePreinfo {
-  background-color: rgba(224, 69, 121, 0.933);
+  background-color: rgba(236, 77, 130, 0.933);
 }
 
 .pageInfo {
@@ -106,11 +137,20 @@ body footer {
   text-decoration: none;
 }
 
+.catsCardcolor {
+  background-color: #df8a76;
+  border: 3px solid #d4834d;
+}
+
+.bgAd {
+  background-image: url(https://t3.ftcdn.net/jpg/01/10/07/60/240_F_110076009_vp0xm9lHwZZomAJYtmg2JpuV8TfXadaL.jpg);
+}
+
 .careBackgroundimage {
   background-image: url("https://getwallpapers.com/wallpaper/full/2/0/e/1179861-download-cat-hd-wallpapers-1080p-1920x1080.jpg");
 }
 
-.animate__animated.animate__rotateInDownRight {
+.animate__animated.animate__flipInY {
   animation-delay: 1s;
   animation-duration: 2s;
 }
@@ -125,7 +165,42 @@ body footer {
 }
 
 .cardColor {
-  background-color: rgba(224, 69, 121, 0.933);
+  background-color: rgba(236, 77, 130, 0.933);
+}
+
+.cardBorder {
+  border-color: rgba(236, 77, 130, 0.933);
+}
+
+.areaNumber1 {
+  grid-area: areaNumber1;
+}
+
+.areaNumber2 {
+  grid-area: areaNumber2;
+}
+
+.areaNumber3 {
+  grid-area: areaNumber3;
+}
+
+.areaNumber4 {
+  grid-area: areaNumber4;
+}
+
+.areaNumber5 {
+  grid-area: areaNumber5;
+}
+
+.areaNumber6 {
+  grid-area: areaNumber6;
+}
+
+.asideLinks {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 25% 25% 15% 35%;
+  grid-template-areas: "areaNumber1 areaNumber2 areaNumber3" "areaNumber1 areaNumber5 areaNumber3" "areaNumber1 areaNumber5 areaNumber3" "areaNumber4 areaNumber5 areaNumber6";
 }
 
 .donationsBackgroundimage {
@@ -148,16 +223,19 @@ body footer {
   text-decoration: none;
 }
 
+.donationsBg {
+  background-color: #7ac48f;
+}
+
+.donationsAd {
+  background-image: url(https://t4.ftcdn.net/jpg/02/48/54/09/240_F_248540996_hsYrvQR3Dzto9meiYXZU0aeBYQoVOxwv.jpg);
+}
+
 .contactBackgroundimage {
-  background-image: url("https://getwallpapers.com/wallpaper/full/e/f/2/1179657-top-cat-hd-wallpapers-1080p-1920x1080-for-ios.jpg");
+  background-image: url(https://getwallpapers.com/wallpaper/full/e/f/2/1179657-top-cat-hd-wallpapers-1080p-1920x1080-for-ios.jpg);
 }
 
 .animate__animated.animate__shakeX {
-  animation-duration: 2s;
-}
-
-.animate__animated.animate__bounceInRight {
-  animation-delay: 1s;
   animation-duration: 2s;
 }
 
@@ -168,6 +246,76 @@ body footer {
 
 .catchEyecolor {
   color: #a51499;
+}
+
+.bgSection {
+  background-color: #7ac48f;
+}
+
+.bgForm {
+  background-color: #df8a76;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Marcellus", serif;
+}
+body nav {
+  background-color: #d4834d;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, rgb(204, 51, 204) 50%, rgb(0, 255, 213) 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+.navBg {
+  background-color: #d4834d;
+}
+
+.bgFooter {
+  background-color: #713E5A;
 }
 
 /*# sourceMappingURL=style.css.map */

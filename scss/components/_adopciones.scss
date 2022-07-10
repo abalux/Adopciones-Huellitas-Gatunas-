@@ -26,9 +26,16 @@
         text-decoration: none;
     }
 .catchEyecolor{
-    color: map-get($fontColors, color1);
+    color: nth($font-colors, 6);
 }
 .otherColortext{
     color: nth($font-colors, 2);
     text-decoration: none;
     }
+.catsCardcolor{
+    background-color: nth($bg-colors, 3);
+    border: 3px solid nth($bg-colors, 1);
+}
+.bgAd{
+    background-image: url(https://t3.ftcdn.net/jpg/01/10/07/60/240_F_110076009_vp0xm9lHwZZomAJYtmg2JpuV8TfXadaL.jpg);
+}

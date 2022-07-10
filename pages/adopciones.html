@@ -7,6 +7,7 @@
     <meta name="keywords" content="ELEGIR, GATOS, MICHIS, ADOPTAR">
     <meta name="description" content="Página del sitio web donde podes elegir un gato para adoptar. Se les provee un formulario de adopción y requerimientos.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Marcellus&family=Stoke:wght@300&display=swap" rel="stylesheet">
@@ -15,83 +16,182 @@
     <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body class="pageFonts">
-    <nav class="navBar">
-        <ul class="nav justify-content-around">
-            <li class="nav-item">
-              <a class="nav-link colorText" href="../index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link colorText" aria-current="page" href="adopciones.html">Adopciones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link colorText" href="cuidados.html">Cuidados</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link colorText" href="donaciones.html">Donaciones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link colorText" href="contacto.html">Contacto</a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg sticky-top">
+     <div class="container-fluid">
+      <a class="navbar-brand text-dark" href="#"><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Huellitas Gatunas</button></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Adopciones
+            </a>
+            <ul class="dropdown-menu navBg" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-white" aria-current="page" href="adopciones.html">Adopciones</a></li>
+              <li><a class="dropdown-item text-white" href="formulario.html">Formulario de adopción</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="cuidados.html">Cuidados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="donaciones.html">Donaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-white text-white border-white" type="submit">Search</button>
+        </form>
+      </div>
+     </div>
     </nav>
     <header class="adoptionsBackgroundimage headerHeight">
-        <h1 class="d-flex flex-row justify-content-end pe-5 adoptionsTitlepadding animate__animated animate__backOutDown">Conocé a nuestros michis</h1>
+        <h1 class="fw-bold d-flex flex-row justify-content-end pe-5 adoptionsTitlepadding animate__animated animate__backOutDown">Conocé a nuestros michis</h1>
     </header>
+    <div class="bgAd pb-3">
+      <p class="fs-3 pt-5 fs-3 text-dark fw-bold text-center">HAY MUCHOS FELINOS SUELTOS POR LAS CALLES</p>
+      <p class="fs-4 pb-5 text-white text-center">Brindales un hogar</p>
+    </div>
     <section class="adoptionsTransformation">
         <article class="pagePreinfo">
             <div class="d-flex flex-row flex-wrap justify-content-around pb-5 pt-5">
-                <div class="card">
+                <div class="card mt-4 catsCardcolor">
                   <img src="../img/fotosgatos/gato n1.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">GARFIELD, 4 anios</h5>
-                    <p class="card-text otherColortext"><a href="x" class="otherColortext">Para ver más información</a></p>
+                    <h5 class="card-title otherColortext fw-bold">GARFIELD, 4 anios</h5>
+                    <p class="card-text">Macho</p>
+                    <p class="card-text">Chacarita, CABA</p>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card mt-4 catsCardcolor">
                   <img src="../img/fotosgatos/gato 2.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">LYNA, 1 anio y medio</h5>
-                    <p class="card-text"><a href="x" class="otherColortext">Para ver más información</a></p>
+                    <h5 class="card-title otherColortext fw-bold">LYNA, 1 anio y medio</h5>
+                    <p class="card-text">Hembra</p>
+                    <p class="card-text">Villa Crespo, CABA</p>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card mt-4 catsCardcolor">
                   <img src="../img/fotosgatos/gato n3.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title">JAZMÍN, 6 anios</h5>
-                    <p class="card-text"><a href="x" class="otherColortext">Para ver más información.</a></p>
+                    <h5 class="card-title otherColortext fw-bold">YASMÍN, 6 anios</h5>
+                    <p class="card-text">Hembra</p>
+                    <p class="card-text">Berazategui, Zona sur GBA</p>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card mt-4 catsCardcolor">
                     <img src="../img/fotosgatos/gato n4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">NÉBULA, 3 meses</h5>
-                      <p class="card-text"><a href="x" class="otherColortext">Para ver más información</a></p>
+                      <h5 class="card-title otherColortext fw-bold">NÉBULA, 3 meses</h5>
+                      <p class="card-text">Hembra</p>
+                      <p class="card-text">Morón, zona oeste GBA</p>
                     </div>
                   </div>
-                  <div class="card">
+                  <div class="card mt-4 catsCardcolor">
                     <img src="../img/fotosgatos/gato n5.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">SALEM, 3 anios</h5>
-                      <p class="card-text"><a href="x" class="otherColortext">Para ver más información</a></p>
+                      <h5 class="card-title otherColortext fw-bold">SALEM, 3 anios</h5>
+                      <p class="card-text">Macho</p>
+                      <p class="card-text">Olivos, Zona norte GBA</p>
                     </div>
                   </div>
-                  <div class="card pt-2">
+                  <div class="card mt-4 catsCardcolor">
                     <img src="../img/fotosgatos/gato n6.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">LUNA, 4 meses</h5>
-                      <p class="card-text"><a href="x" class="otherColortext">Para ver más información</a></p>
+                      <h5 class="card-title otherColortext fw-bold">LUNA, 4 meses</h5>
+                      <p class="card-text">Hembra</p>
+                      <p class="card-text">San Justo, zona oeste GBA</p>
                     </div>
                   </div>
+                  <div class="card mt-4 catsCardcolor">
+                    <img src="../img/fotosgatos/mechi.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title otherColortext fw-bold">MECHI, 3 meses</h5>
+                      <p class="card-text">Hembra</p>
+                      <p class="card-text">Zona sur GBA, Berazategui</p>
+                    </div>
+                  </div>
+                  <div class="card mt-4 catsCardcolor">
+                    <img src="../img/fotosgatos/gato n7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title otherColortext fw-bold">ARENITA, 2 anios</h5>
+                      <p class="card-text">Hembra</p>
+                      <p class="card-text">Recoleta, CABA</p>
+                    </div>
+                  </div>
+                  <div class="card mt-4 catsCardcolor">
+                    <img src="../img/fotosgatos/Gina.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title otherColortext fw-bold">CASPER, 2 anios</h5>
+                      <p class="card-text">Macho</p>
+                      <p class="card-text">Belgrano, CABA</p>
+                    </div>
+                  </div>
+                  <div class="card mt-4 catsCardcolor">
+                    <img src="../img/fotosgatos/fvsrds.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title otherColortext fw-bold">CLEO, 3 anios</h5>
+                      <p class="card-text">Hembra</p>
+                      <p class="card-text">Flores, CABA</p>
+                    </div>
+                  </div>
+                  <div class="card mt-4 catsCardcolor">
+                    <img src="../img/fotosgatos/mjjmjj.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title otherColortext fw-bold">MAX, 2 meses</h5>
+                      <p class="card-text">Macho</p>
+                      <p class="card-text">Villa del Parque, CABA</p>
+                    </div>
+                  </div>
+                  <div class="card mt-4 catsCardcolor">
+                    <img src="../img/fotosgatos/gdgdv.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title otherColortext fw-bold">SIMBA, 1 anio</h5>
+                      <p class="card-text">Macho</p>
+                      <p class="card-text">Adrogué, zona sur GBA</p>
+                    </div>
+                  </div>
+                  <div class="card mt-4 catsCardcolor">
+                    <img src="../img/fotosgatos/fghbc.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title otherColortext fw-bold">COCO, 1 anio</h5>
+                      <p class="card-text">Hembra</p>
+                      <p class="card-text">Palermo, CABA</p>
+                    </div>
+                  </div>
+                  <div class="card mt-4 catsCardcolor">
+                    <img src="../img/fotosgatos/asgthtr.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title otherColortext fw-bold">LOKI, 8 meses</h5>
+                      <p class="card-text">Macho</p>
+                      <p class="card-text">Monserrat, CABA</p>
+                    </div>
+                  </div>
+                  <div class="card mt-4 catsCardcolor">
+                    <img src="../img/fotosgatos/nhnvbv.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title otherColortext fw-bold">BELLA, 5 meses</h5>
+                      <p class="card-text">Hembra</p>
+                      <p class="card-text">Quilmes, zona sur GBA</p>
+                    </div>
+                  </div>
+                  
               </div>
         </article>
     </section>
+    
     <section class="pageInfo pb-5 pt-5">
         <article class="container">
             <header class="d-flex  flex-wrap flex-column align-items-center justify-content-center">
                 <h2 class="pb-4 catchEyecolor">Qué se necesita para adoptar?</h2>
-                <h3>Adoptar es un acto de responsabilidad y compromiso por lo que es importante que estes capacitado para hacerlo. Un gato puede vivir entre 14 y 18 años y durante todo ese tiempo dependerá de vos.
+                <h3 class="text-white fw-bold">Adoptar es un acto de responsabilidad y compromiso por lo que es importante que estes capacitado para hacerlo. Un gato puede vivir entre 14 y 18 años y durante todo ese tiempo dependerá de vos.
                 </h3>
-                <p>
+                <p class="catchEyecolor">
                    Algunas cuestiones para tener en cuenta son el espacio disponible de tu casa, el tiempo que tengas para brindarle compañía, actividad física y cuidado. También los costos asociados a su alimentación, atención veterinaria y estadía durante tus vacaciones.
                    Para asegurarte una convivencia feliz tu elección debe estar orientada al estilo de vida que llevas y el tiempo real que le podes dedicar.
                 </p>
@@ -99,7 +199,7 @@
             <div class="d-flex flex-wrap flex-column align-items-center justify-content-center pe-2">
                 <p>Una vez estando consciente de esto, veamos estos 7 puntos para empezar con un proceso de adopción de mascotas:
                 </p>
-                <ul>
+                <ul class="fw-bold">
                   <li>Contemplar los cuidados que necesitará tu mascota.</li>
                   <li>Adaptar tu hogar para la llegada de una nueva mascota.</li>
                   <li>Los animales se entregan luego de una charla telefónica orientada a corroborar que se cumplen con las normas básicas de tenencia responsable.</li>
@@ -109,25 +209,30 @@
                   <li>Las adopciones se limitan geográficamente a Capital Federal y Gran Buenos Aires, Argentina. (sujeto a consideración)</li>
                 </ul>
                 <h3 class="pt-2 catchEyecolor">Si estás de acuerdo con estos requisitos, por favor completa el formulario de adopción y te contactaremos</h3>
-                <button type="button"><a class="colorText" href="x">Ir al formulario</a></button>
+                <button type="button"><a class="colorText" href="formulario.html">Ir al formulario</a></button>
             </div>
         </article>
     </section>
-    <footer>
-        <div class="d-flex flex-row justify-content-around">
+    <div class="d-flex flex-row justify-content-center align-items-center indexPhrase2bg">
+      <p class="fs-1 fw-bold pt-2 pb-2">ADOPTÁ, NO COMPRES</p>
+    </div>
+    <div class="container">
+      <footer class="py-2 my-3">
+        <div class="nav justify-content-around border-bottom text-white">
+            <div>
+              <a class="pe-4" style="color: #3b5998;" href="#!" role="button"><i class="bi-facebook"></i></a>
+              <a class="pe-4" style="color: #ac2bac;" href="#!" role="button"><i class="bi-instagram"></i></a>
+              <a style="color: #55acee;" href="#!" role="button"><i class="bi-twitter"></i></a>
+            </div>  
             <p>
-                <a class="colorText" href="----">Instagram</a>
-                <a class="colorText" href="----">Facebook</a>
-                <a class="colorText" href="----">Twitter</a>
-            </p>
-            <p>2022 Adopciones Huellitas Gatunas.Organización sin fines de lucro</p>
-            <p>
-               <a class="colorText" href="cuidados.html">Cuidados</a>
-               <a class="colorText" href="donaciones.html">Donaciones</a>
-               <a class="colorText" href="contacto.html">Contacto</a>
+               <a class="colorText text-white" href="cuidados.html">Cuidados</a>
+               <a class="colorText text-white" href="donaciones.html">Donaciones</a>
+               <a class="colorText text-white" href="contacto.html">Contacto</a>
             </p>
         </div>
-    </footer>
+            <p class="text-center text-white pt-2">2022 Adopciones Huellitas Gatunas. Organización sin fines de lucro</p>
+      </footer>
+    </div> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

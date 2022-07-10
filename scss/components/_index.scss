@@ -1,5 +1,5 @@
 body{
-    background-color: nth($bg-colors , 2);
+    background-color: nth($bg-colors , 5);
     color: nth($font-colors , 1);
     font-family: 'Marcellus', serif;
     nav{
@@ -20,19 +20,11 @@ body{
     }
     aside{
         background-image: linear-gradient(to bottom right, #df8a76,#e2421e);
-        ul{
-            li{
-               list-style: none;
-               a{
-                  color: nth($font-colors , 2);
-                  text-decoration: none;
-               }
-            }
-        }
     }
     footer{
         padding-top: 10px;
-        background-color: nth($bg-colors , 5);
+        /*background-color: nth($bg-colors , 5);*/
+        
     }
 }
 .indexBackgroundimage{
@@ -58,6 +50,34 @@ body{
     animation-delay: 1.5s;
     animation-duration: 2s;
 }/*no los se anidar*/
-
+.carouselSize{
+    height: 200px;
+    width: 400px;
+}   
+.indexPhrasebg{
+    background-image: url(https://t3.ftcdn.net/jpg/02/98/20/18/240_F_298201821_e90YxH0f6FBwOvcKhynlwF8sNYxlCMsg.jpg);
+}
+.indexPhrase2bg{
+    background-image: url(https://t4.ftcdn.net/jpg/02/71/80/07/240_F_271800729_IQMQ6TYmvy1eK1v7ZwzmYriOoYYsbTkj.jpg);
+    background-size: contain;
+    background-repeat: repeat-x;
+}
+.cardColor{
+    background-color: nth($bg-colors , 1);
+}
+.quoteColor{
+    background-image: url(https://t4.ftcdn.net/jpg/02/51/94/23/240_F_251942332_zFyC631w7mosf846QXtWjcmNqU11SErH.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
-    
+}
+.aboutUsbg{
+    background-color: black;
+}
+.border-radius{
+    border-radius: 50%;
+}
+.imgQuote{
+    max-width: 35vw;
+    height: auto;
+}

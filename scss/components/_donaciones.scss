@@ -16,3 +16,9 @@
             @include textColor();
             text-decoration: none;
             }
+.donationsBg{
+    background-color: nth($bg-colors, 2);
+}
+.donationsAd{
+    background-image: url(https://t4.ftcdn.net/jpg/02/48/54/09/240_F_248540996_hsYrvQR3Dzto9meiYXZU0aeBYQoVOxwv.jpg);
+}
